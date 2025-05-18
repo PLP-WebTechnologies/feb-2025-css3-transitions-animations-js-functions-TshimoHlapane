@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ferrari Interactive Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Ferrari Interactive Showcase 🏎️</h1>
+
+  <!-- Ferrari Logo -->
+  <img src="images/ferrari-logo-png-transparent.png" alt="Ferrari Logo" class="logo" />
+
+  <!-- Start Engine Button -->
+  <button id="startEngineBtn">Start the Engine</button>
+
+  <!-- Hover Effect Image -->
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTv6lyJO1qAcSeNztNTWxf1sPI_ytzL58Z6CQ&s" 
+  alt="Ferrari Car" class="car-hover" />
+
+  <!-- Keypress Activation -->
+  <p id="keypressInstruction">Press any key to activate turbo mode 🚀</p>
+
+  <!-- Double Click Secret -->
+  <div id="badgeSecret">
+    <img src="https://images.seeklogo.com/logo-png/5/1/ferrari-emblem-logo-png_seeklogo-53763.png" 
+    alt="Ferrari Badge" class="logo" />
+  </div>
+
+  <!-- Image Gallery -->
+  <h2>Gallery</h2>
+  <div id="gallery">
+    <img src="https://www.secret-classics.com/wp-content/uploads/2020/09/ferrarif8tributo-4.jpg" class="ferrari-slide" />
+    <img src="https://doubleapex.co.za/wp-content/uploads/2022/07/Novitec-Ferrari-SF90-Stradale-1.jpg" class="ferrari-slide" style="display: none;" />
+    <img src="https://www.amalgamcollection.com/cdn/shop/files/DSCF6513_grande.jpg?v=1705940428" class="ferrari-slide" style="display: none;" />
+  </div>
+  <button id="nextBtn">Next Car</button>
+
+  <!-- Tabs -->
+  <h2>Ferrari Models</h2>
+  <div class="tabs">
+    <button class="tab" data-tab="f8">F8 Tributo</button>
+    <button class="tab" data-tab="sf90">SF90 Stradale</button>
+    <button class="tab" data-tab="laferrari">La Ferrari</button>
+  </div>
+  <div id="f8" class="tab-content">F8 Tributo is a mid-engine sports car with a twin-turbo V8.</div>
+  <div id="sf90" class="tab-content" style="display: none;">SF90 Stradale is a plug-in hybrid with mind-blowing performance.</div>
+  <div id="laferrari" class="tab-content" style="display: none;">La Ferrari is a limited-production hybrid supercar.</div>
+
+  <!-- Form Validation -->
+  <h2>Book a Test Drive</h2>
+  <form id="testDriveForm">
+    <input type="text" id="name" placeholder="Your Name" required />
